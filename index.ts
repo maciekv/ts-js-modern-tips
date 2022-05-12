@@ -1,4 +1,4 @@
-//////////////////// 1 ////////////////////
+// formatting object in console log
 const item = {
   pathname: 'pathname',
   search: 'search',
@@ -29,7 +29,7 @@ console.log(JSON.stringify(item, null, 4));
 }  
  */
 
-//////////////////// 2 ////////////////////
+// conditionally add properties
 const isValid = true;
 const age = 55;
 const person = {
@@ -40,3 +40,12 @@ const person = {
 };
 
 console.log('person', person);
+
+// destructuring with alias
+const device = {
+  name: 'iPhone',
+  model: '17 ProMax',
+};
+const { model: version } = device;
+
+console.log('version', version);
